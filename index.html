@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirwa Pie - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar animate-fade-in-down">
+        <div class="nav-brand">Hirwa Pie</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="intro-text animate-fade-in-up">Hirwa Pie | Aspiring Software Developer</p>
+            <h1 class="animate-fade-in-up">Building Solutions <br> Through Code</h1>
+            <p class="tagline animate-fade-in-up">I’m Hirwa, a passionate developer with experience in React, Python, and full-stack development, eager to create impactful applications.</p>
+            <a href="#projects" class="cta-button animate-fade-in-up">Explore My Work <i class="fas fa-arrow-right"></i></a>
+            <div class="social-links animate-fade-in-up">
+                <a href="https://github.com/d3cxty" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:example@email.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects animate-fade-in-up" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <!-- Project 1: Python Voice Assistant -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Python Voice Assistant">
+                <h3>Python Voice Assistant</h3>
+                <p>A voice-activated command launcher built with Python, capable of opening apps and performing tasks.</p>
+                <p><strong>Technologies:</strong> Python, Speech Recognition</p>
+                <a href="https://github.com/d3cxty/Python_voice_assitant" target="_blank" class="project-link">GitHub</a>
+            </div>
+            <!-- Project 2: Simple MERN E-Shop -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="MERN E-Shop">
+                <h3>Simple MERN E-Shop</h3>
+                <p>A full-stack e-commerce platform using MongoDB, Express, React, and Node.js.</p>
+                <p><strong>Technologies:</strong> MongoDB, Express, React, Node.js</p>
+                <a href="https://github.com/d3cxty/SIMPLE_MERN_ESHOP" target="_blank" class="project-link">GitHub</a>
+            </div>
+            <!-- Project 3: PHP Mini Social Media -->
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="PHP Social Media">
+                <h3>PHP Mini Social Media</h3>
+                <p>A simple social media application built with PHP and Tailwind CSS.</p>
+                <p><strong>Technologies:</strong> PHP, Tailwind CSS</p>
+                <a href="https://github.com/d3cxty/MIMO-A-php-mini-social-media-aplication" target="_blank" class="project-link">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education animate-fade-in-up" id="education">
+        <h2>Education & Experience</h2>
+        <div class="education-list">
+            <div class="education-item">
+                <h3>A Level, SOS Technical High School</h3>
+                <p><strong>Kigali, Rwanda</strong> | Feb 2020 - Nov 2023</p>
+                <p>Completed A-level education with a focus on technical skills and academic rigor.</p>
+            </div>
+            <div class="education-item">
+                <h3>Minor Seminary, Petit Seminaire Saint Vincent</h3>
+                <p><strong>Ndera, Rwanda</strong> | Dates Attended</p>
+                <p>Engaged in a prestigious Catholic seminary emphasizing academic excellence, spiritual development, and leadership.</p>
+            </div>
+            <div class="education-item">
+                <h3>Internship: React Developer at E-shuri</h3>
+                <p><strong>Kigali, Rwanda</strong> | Jan 2024 - Aug 2024</p>
+                <p>Developed and maintained web applications using React, contributing to front-end solutions.</p>
+            </div>
+        </div>
+        <h3>Skills</h3>
+        <div class="skills-list">
+            <span>React</span>
+            <span>C++</span>
+            <span>CSS</span>
+            <span>jQuery</span>
+            <span>MySQL</span>
+            <span>Python</span>
+            <span>PHP</span>
+            <span>Microsoft Office</span>
+        </div>
+        <h3>Extra-Curricular Activities</h3>
+        <div class="activities-list">
+            <p><strong>Guitarist</strong>: Actively play the guitar, contributing to personal growth and creativity.</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog animate-fade-in-up" id="blog">
+        <h2>My Blog</h2>
+        <a href="#blog-dashboard" class="cta-button">Manage Posts</a>
+        <div class="blog-posts" id="blog-posts">
+            <!-- Blog posts populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Blog Dashboard Section -->
+    <section class="blog-dashboard animate-fade-in-up" id="blog-dashboard">
+        <h2>Blog Dashboard</h2>
+        <form id="blog-form">
+            <input type="hidden" id="edit-index">
+            <div class="form-group">
+                <label for="blog-title">Title</label>
+                <input type="text" id="blog-title" required>
+            </div>
+            <div class="form-group">
+                <label for="blog-date">Date</label>
+                <input type="date" id="blog-date" required>
+            </div>
+            <div class="form-group">
+                <label for="blog-content">Content</label>
+                <textarea id="blog-content" required></textarea>
+            </div>
+            <button type="submit" id="submit-blog">Add Post</button>
+        </form>
+        <h3>All Posts</h3>
+        <div class="blog-posts" id="dashboard-posts">
+            <!-- Dashboard posts populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact animate-fade-in-up" id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="contact-message"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer animate-fade-in-up">
+        <p>© 2025 Hirwa Pie. All rights reserved.</p>
+        <div class="footer-social">
+            <a href="https://github.com/d3cxty" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/hirwapie00" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:example@email.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
